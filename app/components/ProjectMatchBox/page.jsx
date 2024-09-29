@@ -6,7 +6,7 @@ const ProjectMatchBox = ({ title, subtitle, items, viewAllText }) => {
       <h2 className="text-lg font-bold px-4 mt-2">{title}</h2>
       <p className="text-xs text-gray-400 mb-4 px-4">{subtitle}</p>
       <ul className="space-y-2 py-4 mb-4 px-4">
-        {items.map((item, index) => (
+        {items?.map((item, index) => (
           <li key={index} className="flex items-center justify-between">
             <span className="text-sm font-semibold truncate">{item}</span>
             <ChevronRight size={16} className="text-gray-400 font-bold" />
