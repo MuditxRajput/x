@@ -26,18 +26,18 @@ const Page = () => {
   ];
 
   return (
-    <div className="bg-slate-100 min-h-screen p-2 sm:p-4 md:p-6 lg:p-8">
-      <div className="max-w-full lg:max-w-7xl mx-auto px-2 sm:px-4 md:px-6 lg:px-8 py-4">
+    <div className="bg-slate-100 min-h-screen p-2 sm:p-4 md:p-6 lg:p-10 ">
+      <div className="max-w-full   lg:max-w-7xl mx-auto px-1  py-3 mb-7 ">
         
         {/* Profile Section */}
-        <div className="flex flex-col sm:flex-row items-center sm:items-start sm:space-x-4 mb-4 sm:mb-6">
-          <Image src={profile} alt="Profile Picture" className="rounded-full w-16 h-16 mb-2 sm:mb-0" />
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center sm:text-left">Welcome back, Parik 👋</h1>
+        <div className="flex  flex-col sm:flex-row items-center  sm:space-x-4  mb-4 sm:mb-6 px-1">
+          <Image src={profile} alt="Profile Picture" className="rounded-full w-[70px] h-[70px] mb-2 sm:mb-0 " />
+          <h1 className="text-2xl sm:text-3xl md:text-[39px] font-bold text-center sm:text-left mb-2">Welcome back, Parik👋</h1>
         </div>
 
         {/* Earnings and Project Matches Section */}
-        <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-4 mb-6">
-          <div className="w-full lg:w-[500px]">
+        <div className="flex  flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-14 mb-3 py-5 ">
+          <div className="w-full lg:w-[466px] px-1">
             <EarningsBox />
           </div>
           <div className="flex-1">
@@ -46,8 +46,8 @@ const Page = () => {
         </div>
 
         {/* Quick-box and Jobs Section */}
-        <div className="flex flex-col xl:flex-row gap-4 xl:gap-6 mt-4 sm:mt-6">
-          <div className="w-full xl:w-1/2">
+        <div className="flex flex-col xl:flex-row gap-5 mt-4  ">
+          <div className=" px-1">
             <QuickBoxDemo messages={messages} />
           </div>
           <div className="w-full xl:w-1/2 mt-4 xl:mt-0">

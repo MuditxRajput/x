@@ -17,19 +17,20 @@ const NavBar = () => {
   ];
 
   return (
-    <nav className="bg-white mt-2 shadow-sm">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <div className="flex items-center">
+    <nav className="bg-white  ">
+      <div className="">
+        <div className="flex justify-between items-center  h-20">
+          <div className="flex items-center px-14">
             <div className="flex-shrink-0">
-              <Image src={logo} alt='logo' width={70} />
+              <Image src={logo} alt='logo' width={60} className='' />
             </div>
-            <div className="hidden md:flex ml-10 space-x-8">
+            <div className="hidden md:flex ml-20
+             space-x-8">
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-500 hover:text-gray-900 font-semibold text-sm"
+                  className="text-gray-400 hover:text-gray-900 font-semibold text-[15px]"
                 >
                   {item.name}
                 </a>
@@ -37,10 +38,10 @@ const NavBar = () => {
             </div>
           </div>
 
-          <div className="hidden md:flex items-center space-x-4">
-            <TbMessages className="text-xl text-slate-500 cursor-pointer" />
-            <LuBell className="text-xl text-slate-500 cursor-pointer" />
-            <div className="relative">
+          <div className="hidden md:flex items-center space-x-7 px-10  mt-2 ">
+            <TbMessages className="text-2xl text-slate-600 cursor-pointer" />
+            <LuBell className="text-2xl text-slate-700 cursor-pointer" />
+            <div className="relative  flex items-center justify-center">
               <button onClick={() => setProfileOpen(!isProfileOpen)}>
                 <Image
                   src={profile}
