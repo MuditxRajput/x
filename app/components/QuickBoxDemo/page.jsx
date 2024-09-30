@@ -20,7 +20,7 @@ const QuickBox = ({ messages }) => {
               <p className="text-sm sm:text-[15px] font-bold truncate">{message.name}</p>
               <p className="text-xs sm:text-[12px] text-gray-400 truncate">{message.content}</p>
             </div>
-            <span className="text-xs text-gray-500 ml-2 flex-shrink-0">{message.time}</span>
+            <span className="text-xs text-gray-500 ml-2 mr-2 flex-shrink-0 mb-6">{message.time}</span>
           </div>
         ))}
       </div>
